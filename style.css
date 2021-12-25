@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    /**/
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    /**/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /**/
+    font-family: Courier New, monospace;
+    font-size: 30px;
+}
+
+main {
+    height: calc(100vh - 50px);
+    /**/
+    background-color: #3b3838;
+    /**/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.score-content {
+    height: 150px;
+    max-width: 700px;
+    /**/
+    display: flex;
+    align-items: center;
+    /**/
+    font-weight: bold;
+    font-family: Courier New, monospace;
+    margin-bottom: 10px;
+}
+
+.score-box {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /**/
+    width: 180px;
+    height: 80px;
+    /**/
+    margin: 20px;
+    /**/
+    border: 5px solid white;
+    border-radius: 8px;
+}
+
+.score-display {
+    height: 100%;
+    width: 100%;
+    /**/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /**/
+    font-size: 40px;
+    color: white;
+}
+
+.player-name, .ai-name {
+    font-size: 40px;
+    /**/
+    color: white;
+}
+
+.actions-text, .hint {
+    height: 50px;
+    /**/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /**/
+    margin: 50px;
+    /**/
+}
+
+.actions-text p, .hint p {
+    font-family: Courier New, monospace;
+    font-weight: bold;
+    font-size: 32px;
+    /**/
+    color: antiquewhite;
+    /**/
+    white-space: pre-wrap;
+}
+
+.hint p {
+    opacity: .7;
+    font-size: 20px;
+}
+
+.actions {
+    display: flex;
+    align-content: space-evenly;
+    align-items: center;
+}
+
+.actions img {
+    width: 350px;
+    padding: 50px;
+    transition: all .4s ease-in-out;
+}
+
+.actions img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.highlighted-action {
+    color: limegreen;
+}
